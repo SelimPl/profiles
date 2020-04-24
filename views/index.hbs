@@ -1,0 +1,14 @@
+<h1>Profile użytkowników:</h1>
+
+{{#if recent}}
+ <h2>nowi użytkownicy:</h2>
+ <ul>
+     {{#each recent}}
+         <li><a href="/users/{{username}}">{{username}}</a></li>
+    {{/each}} 
+ </ul>
+
+ {{/if}}
+
+ <p><a href="/auth/login">Zaloguj się</a> by zaktualizować dane.</p>
+ <p><a href="/auth/register">Rejestracja</a>, by swtorzyć nowe konto</p>
